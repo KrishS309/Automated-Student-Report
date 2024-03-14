@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHRIST (DEEMED TO BE UNIVERSITY) - Student Data Upload</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='sl.css') }}">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="https://christuniversity.in/images/logo.jpg" alt="University Logo" class="logo">
+        </div>
+        <h1 class="upload-text">STUDENT DATA UPLOAD</h1>
+    </header>
+
+    <main>
+        <form id="uploadForm" action="/upload" method="POST" enctype="multipart/form-data" class="uploader" onsubmit="return uploadFile();">
+            <input type="file" id="csvFile" name="file" accept=".csv">
+            <label for="csvFile" id="file-drag">
+                <div id="start">
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                    <div>Select a CSV file or drag here</div>
+                    <div id="notimage" class="hidden">Please select a CSV file</div>
+                </div>
+                <div class="button-container">
+                    <span id="file-upload-btn" class="btn btn-primary">Select a CSV file</span>
+                    <button type="button" class="btn" onclick="uploadFile()">Upload File</button>
+                </div>
+                <!-- Placeholder for upload status messages -->
+                <div id="uploadStatus" class="upload-status"></div>
+            </label>
+        </form>
+        <div class="additional-content">
+            <h2>Features</h2>
+            <p>This project helps in making communication between parents and teachers more efficient by automating the process.<br><br>It is designed to send the student's marks and attendance to their respective parents so that they are updated of their ward's progress on time.</p>
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
