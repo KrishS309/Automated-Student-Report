@@ -8,9 +8,9 @@ from email.mime.text import MIMEText
 app = Flask(__name__)
 
 # Twilio credentials
-TWILIO_ACCOUNT_SID = 'AC99571c2852a51000833083065aaf40b8'
-TWILIO_AUTH_TOKEN = '89f14c2d18b8e7b665b8ae9283581e98'
-TWILIO_PHONE_NUMBER = '+18152474237'
+TWILIO_ACCOUNT_SID = 'AC9b5050c32c0b0db285e8990c1622e688'
+TWILIO_AUTH_TOKEN = '36430fa8b5b6a5fac1631960fb7cf4bc'
+TWILIO_PHONE_NUMBER = '+14256290790'
 
 # Email credentials
 EMAIL_ADDRESS = 'servicelearning2024@gmail.com'
