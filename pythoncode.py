@@ -11,7 +11,7 @@ import os
 
 TWILIO_ACCOUNT_SID = os.getenv('TWILIO_ACCOUNT_SID')
 TWILIO_AUTH_TOKEN = os.getenv('TWILIO_AUTH_TOKEN')
-TWILIO_PHONE_NUMBER = '+14256290790'
+TWILIO_PHONE_NUMBER = '+18152474237'
 
 # Email credentials
 EMAIL_ADDRESS = 'servicelearning2024@gmail.com'
